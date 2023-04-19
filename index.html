@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title> Dev Finder  </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-brands fa-github-alt"></i>
+            <h1> Dev Finder </h1>
+        </div>
+       
+    </header>
+
+    <main>
+        <form id="form-search">
+        
+            <button type="submit" id="btn-search">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+            </button>
+            <input autocomplete="off" id="input-search" type="text" placeholder="Informe o usuário que deseja buscar:"> 
+        </form>
+
+        <div class="box-Profile">
+            <img class="img-profile" src="" alt="">
+
+            <div class="names-profile">
+                <h2 id="name"></h2>
+
+                <h2 class="user"">
+                    <a id="name-user" target="_blank" href="">
+                    </a>
+                </h2>
+            </div>
+        </div>
+
+        <div class="infos-profile">
+
+            <div class="box-location">
+                <h3> <i class="fa-solid fa-location-dot"></i> </h3>
+                <p id="location-description">
+                    
+                </p>
+            </div>
+
+            <div class="box-followers">
+
+                <i class="fa-solid fa-people-group"></i>
+                <p id="followers">
+                </p>
+            </div>
+
+
+        </div>
+        
+        <div class="link-profile">
+            <h3> <i class="fa-solid fa-link"></i></h3>
+            <a id="url-linkProfile" target="_blank" href=""></a>
+        </div>
+
+
+        <div class="box-bio">
+            <h4> Sobre o Dev:  </h4>
+            <p id="bio-description">
+                
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p> Desenvolvido por <a href="">Yuri Ramos ©</a> </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f3b59ce49d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

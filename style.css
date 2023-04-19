@@ -1,0 +1,175 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#131820;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+}
+
+main{
+    height: 76vh;
+    width: 65vw;
+
+    background-color:#272B33;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.822);
+    
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+    padding: 25px;
+}
+
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+ 
+}
+
+#btn-search{
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    top: 6px;
+    right:125px;
+}
+
+.icon-search{
+color: #595959;
+font-size: 18px;
+
+
+
+}
+
+#input-search{
+    width: 400px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+
+#input-search:focus{
+    outline: none;
+}
+
+
+.box-Profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+.names-profile{
+    display: flex;
+    gap: 10px;
+}
+
+#name, .user{
+font-size: 17px;
+}
+
+.img-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.822);
+  
+}
+
+.infos-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box-location{
+display: flex;
+flex-direction: row;
+align-items: center;
+
+gap: 6px;
+width: 220px;
+}
+
+.box-location h3{
+font-size: 13px;
+
+}
+
+#location-description{
+    width: 90%;
+    font-size: 10px;
+}
+
+.box-followers{
+    display: flex;
+    gap: 4px;
+}
+
+.box-followers i, p{
+font-size: 14px;
+}
+
+.link-profile{
+    display: flex;
+    align-items: center;
+    gap: 5px ;
+}
+
+.link-profile i{
+    font-size: 14px;
+}
+
+.link-profile a{
+    font-size: 12px;
+}
+
+.box-bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #0a0a0a42;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+.box-bio h3{
+font-size: 15px;
+
+}
+
+
+footer{
+    position: absolute;
+    bottom: 14px;
+}
