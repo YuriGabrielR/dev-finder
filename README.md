@@ -16,9 +16,8 @@ Para a obtenção e manipulação destes dados, fiz uma requisição utilizando 
  
  
 
- <img align="center" height="auto" width="1000px" src="https://user-images.githubusercontent.com/94508908/233764191-4aa2ccc6-6993-45d1-8283-bab7bf0f03ba.gif"> </br>
+ <img align="center" height="auto" width="1000px" src="https://user-images.githubusercontent.com/94508908/233766103-d42538ee-6bea-44ad-b616-c611b53f4c5f.png"> </br>
  
-
 
 
 
