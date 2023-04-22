@@ -29,7 +29,6 @@ const showClass = document.querySelectorAll('.hide');
         }  
 
         let data =  await response.json(); 
-        console.log(data);
        
         postData(data);
         showData();
@@ -60,9 +59,6 @@ function postData(d){
         linkProfile.setAttribute('href', d.blog); 
         linkProfile.innerText = d.blog;
         bioDev.innerText = d.bio; 
-    
-
-        
 
 }
 
