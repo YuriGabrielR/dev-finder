@@ -16,11 +16,12 @@ Para a obtenção e manipulação destes dados, fiz uma requisição utilizando 
  
  
 
- <img align="center" height="auto" width="1000px" src="https://user-images.githubusercontent.com/94508908/233764092-2c438256-4271-4aa5-85a3-eaeb4c560d5a.gif"> </br>
+ <img align="center" height="auto" width="1000px" src="https://user-images.githubusercontent.com/94508908/233764191-4aa2ccc6-6993-45d1-8283-bab7bf0f03ba.gif"> </br>
  
 
 
 
 
 ---
+
 
