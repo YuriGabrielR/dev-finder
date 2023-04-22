@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <script defer src="./script.js"></script>
-    <title> Dev Finder  </title>
+    <title> Dev Finder </title>
 </head>
 
 <body>
@@ -17,19 +18,60 @@
             <i class="fa-brands fa-github-alt"></i>
             <h1> Dev Finder </h1>
         </div>
-       
+
+        <nav>
+            <div class="menu-mobile">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="list-nav">
+                <li>
+                    <a target="_blank" href="https://docs.github.com/pt/rest/users?apiVersion=2022-11-28">
+                        <i class="fa-solid fa-database"></i>
+                        API Github
+                    </a>
+
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://github.com/YuriGabrielR/dev-finder">
+                        <i class="fa-brands fa-github"></i> Repositório
+                    </a>
+
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://github.com/YuriGabrielR/dev-finder">
+                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                    </a>
+
+                </li>
+
+
+            </ul>
+        </nav>
     </header>
 
     <main>
         <form id="form-search">
-        
-            <button type="submit" id="btn-search">
-                <i class="fa-solid fa-magnifying-glass icon-search"></i>
-            </button>
-            <input autocomplete="off" id="input-search" type="text" placeholder="Informe o usuário que deseja buscar:"> 
+            
+            <div class="input-area">
+
+                <input autocomplete="off" id="input-search" type="text"
+                    placeholder="Informe o usuário que deseja buscar:"
+                >
+
+                <button type="submit" id="btn-search">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                </button>
+
+            </div>
+
         </form>
 
-        <div class="box-Profile">
+        <div class="box-Profile hide">
             <img class="img-profile" src="" alt="">
 
             <div class="names-profile">
@@ -42,12 +84,12 @@
             </div>
         </div>
 
-        <div class="infos-profile">
+        <div class="infos-profile hide">
 
             <div class="box-location">
-                <h3> <i class="fa-solid fa-location-dot"></i> </h3>
+                <i class="fa-solid fa-location-dot"></i> 
                 <p id="location-description">
-                    
+
                 </p>
             </div>
 
@@ -60,17 +102,17 @@
 
 
         </div>
-        
-        <div class="link-profile">
+
+        <div class="link-profile hide">
             <h3> <i class="fa-solid fa-link"></i></h3>
             <a id="url-linkProfile" target="_blank" href=""></a>
         </div>
 
 
-        <div class="box-bio">
-            <h4> Sobre o Dev:  </h4>
+        <div class="box-bio hide">
+            <h4> Sobre o Dev: </h4>
             <p id="bio-description">
-                
+
             </p>
         </div>
 
@@ -80,6 +122,7 @@
         <p> Desenvolvido por <a href="">Yuri Ramos ©</a> </p>
     </footer>
 
+    <script src="./menu.js"></script>
     <script src="https://kit.fontawesome.com/f3b59ce49d.js" crossorigin="anonymous"></script>
 </body>
 

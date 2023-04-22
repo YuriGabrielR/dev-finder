@@ -1,11 +1,19 @@
 const formSearch = document.querySelector('#form-search');
 const inputSearch = document.querySelector('#input-search');
+const showClass = document.querySelectorAll('.hide');
 
 
     formSearch.addEventListener('submit', (e)=>{
         e.preventDefault();
 
-        getData();
+        if(inputSearch.value ==""){
+
+            alert('Digite um usuário existe!')
+        }else{
+
+            getData();
+            
+        }
         
 
         inputSearch.value = "";
@@ -17,13 +25,14 @@ const inputSearch = document.querySelector('#input-search');
     fetch (`https://api.github.com/users/${inputSearch.value}`)
     .then (async response =>{
         if(!response.ok){
-            throw Error (alert); 
+            throw Error (error.message); 
         }  
 
         let data =  await response.json(); 
         console.log(data);
        
         postData(data);
+        showData();
     })
 
 }
@@ -39,21 +48,31 @@ function postData(d){
     const linkProfile = document.querySelector('#url-linkProfile');
     const bioDev = document.querySelector('#bio-description');
     
-    imgProfile.setAttribute('src', d.avatar_url);
+  
 
-    nameProfile.innerText = `${d.name} /`; 
-    nameUser.innerText = d.login; 
-    location.innerText = d.location;
-    followers.innerText = `${d.followers} Seguidores`; 
+        imgProfile.setAttribute('src', d.avatar_url);
 
-    linkProfile.setAttribute('href', d.blog); 
-    linkProfile.innerText = d.blog;
-    bioDev.innerText = d.bio; 
+        nameProfile.innerText = `${d.name} /`; 
+        nameUser.innerText = d.login; 
+        nameUser.setAttribute('href', d.html_url);
+        location.innerText = d.location;
+        followers.innerText = `${d.followers} Seguidores`; 
+        linkProfile.setAttribute('href', d.blog); 
+        linkProfile.innerText = d.blog;
+        bioDev.innerText = d.bio; 
+    
+
+        
 
 }
 
 
 function showData(){
+    
+    showClass.forEach((item)=>{
 
+        item.classList.add('active');
+       
+    })
 
 }
